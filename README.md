@@ -14,3 +14,9 @@ pgcli -u admin -h 127.0.0.1
 ```
 docker compose exec node npx prisma migrate dev --name init
 ```
+
+*Seed*
+
+```
+docker compose exec node npx prisma db seed
+```
