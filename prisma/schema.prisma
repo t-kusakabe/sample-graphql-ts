@@ -21,9 +21,10 @@ model Task {
 }
 
 model prisma_test {
-  id Int @id @default(autoincrement())
-  timestamp DateTime
-  hogehoge String
+  id         Int      @id @default(autoincrement())
+  timestamp  DateTime
+  hogehoge   String
+  name       String
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
 }
