@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Container, Heading, Stack } from '@chakra-ui/react';
 
 import { TaskList } from '../components/TaskList';
+import { TaskAddForm } from '../components/TaskAddForm';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <Container my='32px'>
           <Stack spacing='32px'>
             <Heading>TASK LIST</Heading>
+            <TaskAddForm />
             <TaskList />
           </Stack>
         </Container>
