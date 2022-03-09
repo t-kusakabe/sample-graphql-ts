@@ -6,7 +6,11 @@
 Username: admin | Password: admin
 
 ```
+# pgcli
 pgcli -u admin -h 127.0.0.1
+
+# prisma studio
+docker compose exec node npx prisma studio
 ```
 
 *Migration*
