@@ -19,3 +19,11 @@ model Task {
 
   @@map(name: "tasks")
 }
+
+model prisma_test {
+  id Int @id @default(autoincrement())
+  timestamp DateTime
+  hogehoge String
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+}
