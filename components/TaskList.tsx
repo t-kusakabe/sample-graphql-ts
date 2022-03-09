@@ -1,6 +1,8 @@
 import { gql, useQuery } from '@apollo/client';
 import { Checkbox, List, ListItem } from '@chakra-ui/react';
 
+import { TaskDeleteButton } from './TaskDeleteButton';
+
 export const AllTasksQuery = gql`
   query {
     tasks {
@@ -25,6 +27,8 @@ export const TaskList = () => {
             <Checkbox colorScheme='teal' isChecked={task.done}>
               {task.title}
             </Checkbox>
+
+            <TaskDeleteButton taskId={task.id} />
           </ListItem>
         );
       })}
